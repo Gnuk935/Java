@@ -1,0 +1,55 @@
+package listas;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Mapa {
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		String nome = null;
+		Integer idade = 0;
+		Integer loop = 0;
+		Integer repete = 0;
+
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		do {
+
+
+
+			System.out.println("Digite o seu nome");
+			nome = sc.next();
+			System.out.println("Digite a sua idade");
+			idade = sc.nextInt();
+			map.put(nome, idade);
+			System.out.println("Deseja adicionar outra pessoa?");
+			System.out.println("1 = Sim /n 2 = Não");
+			repete = sc.nextInt();
+
+			if(repete == 1) {
+				loop = 1;
+			}else {
+				System.out.println("Tenha um bom dia");
+				break;
+			}
+
+
+
+
+
+
+			map.put("Ronaldo", 26);
+			map.put("Gabriel", 27);
+			map.put("Elizabeth", 100000000);
+
+			for(Map.Entry<String, Integer>entry : map.entrySet()){
+				System.out.println(entry.getKey()+" tem "+entry.getValue()+" anos");
+
+
+			}
+		} while (loop == 1);
+	}
+}

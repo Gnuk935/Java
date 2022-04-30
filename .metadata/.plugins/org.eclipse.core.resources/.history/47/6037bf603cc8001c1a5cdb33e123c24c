@@ -1,0 +1,28 @@
+package listas;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Pessoas {
+	
+	
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+		 Map<String, Integer> lista = new HashMap<String, Integer>();
+		
+				lista.put("Ronaldo", 26);
+				lista.put("Gabriel", 27);
+				lista.put("Josão", 16);
+				lista.put("Julia", 32);
+				lista.put("Ana", 15);
+				lista.put("Lurdes", 1095);
+				lista.put("Elizabeth", 100000000);
+				
+			for(Map.Entry<String, Integer>entry : lista.entrySet()){
+				System.out.println(entry.getKey()+" essa pessoa tem "+entry.getValue()+" anos");
+			}
+
+	}
+}

@@ -1,0 +1,23 @@
+package listas;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class List {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String nome = null;
+		
+		ArrayList<String> list = new ArrayList<String>();
+		
+		System.out.println("Digite o seu nome");
+		nome = sc.next();
+		
+		sc.close();
+		
+		list.add(nome);
+		
+		System.out.println(list);
+	}
+}

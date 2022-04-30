@@ -1,0 +1,29 @@
+package listas;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class List {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String nome = null;
+		/*Integer idade = 0;
+		Integer altura = 0;
+		String voce = null;
+		
+		System.out.println("Olá! Por favor me fala mais sobre você");*/
+		ArrayList<String> list = new ArrayList<String>();
+		
+		System.out.println("Qual é o seu nome?");
+		nome = sc.next();
+		
+		//System.out.println("Qual é a sua idade?");
+		
+		sc.close();
+		
+		list.add(nome);
+		
+		System.out.println("Seu nome é:"+list);
+	}
+}

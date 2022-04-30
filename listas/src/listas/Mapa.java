@@ -1,0 +1,36 @@
+package listas;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Mapa {
+
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		String nome = null;
+		Integer idade = 0;
+
+		Map<String, Integer> map = new HashMap<String, Integer>();
+
+			System.out.println("Digite o seu nome");
+			nome = sc.next();
+			System.out.println("Digite a sua idade");
+			idade = sc.nextInt();
+			map.put(nome, idade);
+			
+			sc.close();
+
+			map.put("Ronaldo", 26);
+			map.put("Gabriel", 27);
+			map.put("Elizabeth", 100000000);
+
+			for(Map.Entry<String, Integer>entry : map.entrySet()){
+				System.out.println(entry.getKey()+" tem "+entry.getValue()+" anos");
+
+			}
+		}
+	}
+
