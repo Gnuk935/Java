@@ -40,7 +40,6 @@ public class JrfTela extends JFrame {
 
 		tfValor = new JTextField();
 		tfValor.setBounds(10, 11, 363, 63);
-		tfValor.setText("0,00");
 		tfValor.setHorizontalAlignment(SwingConstants.RIGHT);
 		tfValor.setFont(new Font("Komika Axis", Font.PLAIN, 20));
 		contentPane.add(tfValor);
