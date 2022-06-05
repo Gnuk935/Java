@@ -9,6 +9,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+
+import br.com.controler.Calccontroler;
+import br.com.enumjava.EnumOperacao;
+
 import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
 import javax.swing.Action;
@@ -16,6 +20,7 @@ import java.awt.event.ActionListener;
 
 public class JrfTela extends JFrame {
 
+	private Calccontroler calccontroler;
 	/**
 	 * 
 	 */
@@ -30,6 +35,7 @@ public class JrfTela extends JFrame {
 	 * Create the frame.
 	 */
 	public JrfTela() {
+		calccontroler = new  Calccontroler();
 		setTitle("Calculadora");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 393, 492);
@@ -51,6 +57,11 @@ public class JrfTela extends JFrame {
 		panel.setLayout(new GridLayout(0, 4, 0, 0));
 
 		JButton btAC = new JButton("AC");
+		btAC.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				limpa();
+			}
+		});
 		btAC.setFont(new Font("Komika Axis", Font.PLAIN, 14));
 		panel.add(btAC);
 
@@ -156,6 +167,11 @@ public class JrfTela extends JFrame {
 		panel.add(btnNewButton_1_2);
 
 		JButton btMais = new JButton("+");
+		btMais.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				calccontroler.realizerOperacao(EnumOperacao.SOMA, Double.NaN);
+			}
+		});
 		btMais.setFont(new Font("Komika Axis", Font.PLAIN, 14));
 		panel.add(btMais);
 
@@ -178,6 +194,11 @@ public class JrfTela extends JFrame {
 		panel.add(btVirgula);
 
 		JButton btFechar = new JButton("Fechar");
+		btFechar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 		btFechar.setFont(new Font("Komika Axis", Font.PLAIN, 14));
 		panel.add(btFechar);
 
@@ -225,5 +246,11 @@ public class JrfTela extends JFrame {
 
 
 	}
+
+	//Limpar a calculadora
+	private void limpa(){
+		tfValor.setText("");
+	}
+
 }
 
