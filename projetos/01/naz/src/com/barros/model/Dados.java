@@ -1,95 +1,131 @@
 package com.barros.model;
 
 public class Dados {
-	private String atleta;
-	private String estilo;
-	private String rotina;
-	private String tipoRotina;
-	private String naipe;
-	private int diaNascimeto;
-	private int mesNascimento;
-	private int anoNascimento;
-	private int idade;
-	private String faixaEtaria;
-	private String nivel;
-	private float peso;
-	private String academia;
-	public String getAtleta() {
+	private static String atleta;
+	private static int estilo;
+	private static String estiloString;
+	private static String rotina;
+	private static int tipoRotina;
+	private static String tipoRotinaString;
+	private static int naipe;
+	private static String naipeString;
+	private static int diaNascimeto;
+	private static int mesNascimento;
+	private static int anoNascimento;
+	private static int idade;
+	private static String faixaEtaria;
+	private static int nivel;
+	private static String nivelString;
+	private static float peso;
+	private static int academia;
+	private static String academiaString;
+	public static String getAtleta() {
 		return atleta;
 	}
-	public void setAtleta(String atleta) {
-		this.atleta = atleta;
+	public static void setAtleta(String atleta) {
+		Dados.atleta = atleta;
 	}
-	public String getEstilo() {
+	public static int getEstilo() {
 		return estilo;
 	}
-	public void setEstilo(String estilo) {
-		this.estilo = estilo;
+	public static void setEstilo(int estilo) {
+		Dados.estilo = estilo;
 	}
-	public String getRotina() {
+	public static String getEstiloString() {
+		return estiloString;
+	}
+	public static void setEstiloString(String estiloString) {
+		Dados.estiloString = estiloString;
+	}
+	public static String getRotina() {
 		return rotina;
 	}
-	public void setRotina(String rotina) {
-		this.rotina = rotina;
+	public static void setRotina(String rotina) {
+		Dados.rotina = rotina;
 	}
-	public String getTipoRotina() {
+	public static int getTipoRotina() {
 		return tipoRotina;
 	}
-	public void setTipoRotina(String tipoRotina) {
-		this.tipoRotina = tipoRotina;
+	public static void setTipoRotina(int tipoRotina) {
+		Dados.tipoRotina = tipoRotina;
 	}
-	public String getNaipe() {
+	public static String getTipoRotinaString() {
+		return tipoRotinaString;
+	}
+	public static void setTipoRotinaString(String tipoRotinaString) {
+		Dados.tipoRotinaString = tipoRotinaString;
+	}
+	public static int getNaipe() {
 		return naipe;
 	}
-	public void setNaipe(String naipe) {
-		this.naipe = naipe;
+	public static void setNaipe(int naipe) {
+		Dados.naipe = naipe;
 	}
-	public int getDiaNascimeto() {
+	public static String getNaipeString() {
+		return naipeString;
+	}
+	public static void setNaipeString(String naipeString) {
+		Dados.naipeString = naipeString;
+	}
+	public static int getDiaNascimeto() {
 		return diaNascimeto;
 	}
-	public void setDiaNascimeto(int diaNascimeto) {
-		this.diaNascimeto = diaNascimeto;
+	public static void setDiaNascimeto(int diaNascimeto) {
+		Dados.diaNascimeto = diaNascimeto;
 	}
-	public int getMesNascimento() {
+	public static int getMesNascimento() {
 		return mesNascimento;
 	}
-	public void setMesNascimento(int mesNascimento) {
-		this.mesNascimento = mesNascimento;
+	public static void setMesNascimento(int mesNascimento) {
+		Dados.mesNascimento = mesNascimento;
 	}
-	public int getAnoNascimento() {
+	public static int getAnoNascimento() {
 		return anoNascimento;
 	}
-	public void setAnoNascimento(int anoNascimento) {
-		this.anoNascimento = anoNascimento;
+	public static void setAnoNascimento(int anoNascimento) {
+		Dados.anoNascimento = anoNascimento;
 	}
-	public int getIdade() {
+	public static int getIdade() {
 		return idade;
 	}
-	public void setIdade(int idade) {
-		this.idade = idade;
+	public static void setIdade(int idade) {
+		Dados.idade = idade;
 	}
-	public String getFaixaEtaria() {
+	public static String getFaixaEtaria() {
 		return faixaEtaria;
 	}
-	public void setFaixaEtaria(String faixaEtaria) {
-		this.faixaEtaria = faixaEtaria;
+	public static void setFaixaEtaria(String faixaEtaria) {
+		Dados.faixaEtaria = faixaEtaria;
 	}
-	public String getNivel() {
+	public static int getNivel() {
 		return nivel;
 	}
-	public void setNivel(String nivel) {
-		this.nivel = nivel;
+	public static void setNivel(int nivel) {
+		Dados.nivel = nivel;
 	}
-	public float getPeso() {
+	public static String getNivelString() {
+		return nivelString;
+	}
+	public static void setNivelString(String nivelString) {
+		Dados.nivelString = nivelString;
+	}
+	public static float getPeso() {
 		return peso;
 	}
-	public void setPeso(float peso) {
-		this.peso = peso;
+	public static void setPeso(float peso) {
+		Dados.peso = peso;
 	}
-	public String getAcademia() {
+	public static int getAcademia() {
 		return academia;
 	}
-	public void setAcademia(String academia) {
-		this.academia = academia;
+	public static void setAcademia(int academia) {
+		Dados.academia = academia;
 	}
+	public static String getAcademiaString() {
+		return academiaString;
+	}
+	public static void setAcademiaString(String academiaString) {
+		Dados.academiaString = academiaString;
+	}
+	
 }

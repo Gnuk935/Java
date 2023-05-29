@@ -1,7 +1,7 @@
 package com.barros.view;
 
 public class CadastroView {
-	public void intoducao() {
+	public void introducao() {
 		System.out.println("Bem vindo ao cadastro de atletas para campeonatos!");
 		System.out.println("Por favor preencha as instruções:");
 	}
