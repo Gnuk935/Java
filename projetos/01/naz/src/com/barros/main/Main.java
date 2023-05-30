@@ -5,6 +5,6 @@ public class Main {
 	public static void main(String args[]) {
 		CadastrarControl cad = new CadastrarControl();
 		cad.cadastrar();
-		System.out.println(Dados.getEstiloString());
+		System.out.println(Dados.getIdade());
 	}
 }

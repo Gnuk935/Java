@@ -33,5 +33,7 @@ public class CadastrarControl {
 		Dados.setMesNascimento(s.nextInt());
 		view.anoNascimento();
 		Dados.setAnoNascimento(s.nextInt());		
+		definir.defineIdade();
+		
 	}
 }
