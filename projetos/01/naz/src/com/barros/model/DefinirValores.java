@@ -4,6 +4,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class DefinirValores {
+	private int ano;
+	private int mes;
 	public void defineEstilo() {
 		if (Dados.getEstilo() == 1) {
 			Dados.setEstiloString("Wushu");
@@ -38,12 +40,24 @@ public class DefinirValores {
 		Date data = new Date();
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(data);
-		int ano = cal.get(Calendar.YEAR);
-		int mes = cal.get(Calendar.MONTH) + 1;
+		ano = cal.get(Calendar.YEAR);
+		mes = cal.get(Calendar.MONTH) + 1;
 		int idadeFin = (ano - 1) - Dados.getAnoNascimento();
 		if (Dados.getMesNascimento() < mes) {
 			idadeFin = idadeFin + 1;
 		}
 		Dados.setIdade(idadeFin);
+	}
+	
+	public void defineNivel() {
+		if (Dados.getNivel() == 1) {
+			Dados.setNivelString("A");
+		}else if (Dados.getNivel() == 2) {
+			Dados.setNivelString("B");
+		}
+	}
+	
+	public void defineAcademia() {
+		
 	}
 }
