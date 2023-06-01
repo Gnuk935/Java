@@ -67,4 +67,10 @@ public class CadastroView {
 		System.out.println("6 - Cacoal");
 	}
 	
+	public void repetir() {
+		System.out.println("Deseja mais rotinas?");
+		System.out.println("1 - SIM");
+		System.out.println("2 - NÃO");
+	}
+	
 }

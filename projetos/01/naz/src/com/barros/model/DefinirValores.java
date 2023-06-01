@@ -4,6 +4,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class DefinirValores {
+	private int ano;
+	private int mes;
 	public void defineEstilo() {
 		if (Dados.getEstilo() == 1) {
 			Dados.setEstiloString("Wushu");
@@ -38,12 +40,36 @@ public class DefinirValores {
 		Date data = new Date();
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(data);
-		int ano = cal.get(Calendar.YEAR);
-		int mes = cal.get(Calendar.MONTH) + 1;
+		ano = cal.get(Calendar.YEAR);
+		mes = cal.get(Calendar.MONTH) + 1;
 		int idadeFin = (ano - 1) - Dados.getAnoNascimento();
 		if (Dados.getMesNascimento() < mes) {
 			idadeFin = idadeFin + 1;
 		}
 		Dados.setIdade(idadeFin);
+	}
+	
+	public void defineNivel() {
+		if (Dados.getNivel() == 1) {
+			Dados.setNivelString("A");
+		}else if (Dados.getNivel() == 2) {
+			Dados.setNivelString("B");
+		}
+	}
+	
+	public void defineAcademia() {
+		if (Dados.getAcademia() == 1) {
+			Dados.setAcademiaString("Zanolli");
+		}else if(Dados.getAcademia() == 2) {
+			Dados.setAcademiaString("Garra-Centro");
+		}else if(Dados.getAcademia() == 3) {
+			Dados.setAcademiaString("Garra-Jardim");
+		}else if(Dados.getAcademia() == 3) {
+			Dados.setAcademiaString("Garra-Bela_Vista");
+		}else if(Dados.getAcademia() == 4) {
+			Dados.setAcademiaString("Espigão,");
+		}else if(Dados.getAcademia() == 5) {
+			Dados.setAcademiaString("Cacoal");
+		}
 	}
 }
