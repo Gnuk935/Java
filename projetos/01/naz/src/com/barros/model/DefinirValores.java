@@ -58,6 +58,18 @@ public class DefinirValores {
 	}
 	
 	public void defineAcademia() {
-		
+		if (Dados.getAcademia() == 1) {
+			Dados.setAcademiaString("Zanolli");
+		}else if(Dados.getAcademia() == 2) {
+			Dados.setAcademiaString("Garra-Centro");
+		}else if(Dados.getAcademia() == 3) {
+			Dados.setAcademiaString("Garra-Jardim");
+		}else if(Dados.getAcademia() == 3) {
+			Dados.setAcademiaString("Garra-Bela_Vista");
+		}else if(Dados.getAcademia() == 4) {
+			Dados.setAcademiaString("Espigão,");
+		}else if(Dados.getAcademia() == 5) {
+			Dados.setAcademiaString("Cacoal");
+		}
 	}
 }
