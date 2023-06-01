@@ -9,6 +9,7 @@ import com.barros.view.CadastroView;
 
 public class CadastrarControl {
 	private Scanner s;
+	private int rep = 1;
 
 	public void cadastrar() {
 		CadastroView view = new CadastroView();
@@ -18,14 +19,6 @@ public class CadastrarControl {
 		view.introducao();
 		view.nome();
 		Dados.setAtleta(s.next());
-		view.estilo();
-		Dados.setEstilo(s.nextInt());
-		definir.defineEstilo();
-		view.rotina();
-		Dados.setRotina(s.next());
-		view.tipoRotina();
-		Dados.setTipoRotina(s.nextInt());
-		definir.defineTipoRotina();
 		view.naipe();
 		Dados.setNaipe(s.nextInt());
 		definir.defineNaipe();
@@ -37,16 +30,27 @@ public class CadastrarControl {
 		Dados.setAnoNascimento(s.nextInt());
 		definir.defineIdade();
 		faixa.calcFaixaEtaria(); // avaliar se deve ficar aqui
-		view.nivel();
-		Dados.setNivel(s.nextInt());
-		definir.defineNivel();
-		if (Dados.getEstilo() == 2) {
-			view.peso();
-			Dados.setPeso(s.nextFloat());
-		}
-		view.academia();
-		Dados.setAcademia(s.nextInt());
-		definir.defineAcademia();
-
+		do {			
+			view.estilo();
+			Dados.setEstilo(s.nextInt());
+			definir.defineEstilo();
+			view.rotina();
+			Dados.setRotina(s.next());
+			view.tipoRotina();
+			Dados.setTipoRotina(s.nextInt());
+			definir.defineTipoRotina();
+			view.nivel();
+			Dados.setNivel(s.nextInt());
+			definir.defineNivel();
+			if (Dados.getEstilo() == 2) {
+				view.peso();
+				Dados.setPeso(s.nextFloat());
+			}
+			view.academia();
+			Dados.setAcademia(s.nextInt());
+			definir.defineAcademia();
+			view.repetir();
+			rep = s.nextInt();
+		} while (rep == 1);
 	}
 }
