@@ -12,7 +12,7 @@ Estilo -> deve receber um if para escolhas:
 
 Rotina -> Qual a forma do aluno
 
-tipoRoina -> escolha entre: 
+tipoRotina -> escolha entre: 
 * Mãos Livres - 1
 * Armas Longas - 2 
 * Armas Medias - 3
