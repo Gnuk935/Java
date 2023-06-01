@@ -15,6 +15,7 @@ public class CadastrarControl {
 		CadastroView view = new CadastroView();
 		DefinirValores definir = new DefinirValores();
 		FaixaEtaria faixa = new FaixaEtaria();
+		CadastrarWushu cadWushu = new CadastrarWushu();
 		s = new Scanner(System.in);
 		view.introducao();
 		view.nome();
@@ -34,15 +35,9 @@ public class CadastrarControl {
 			view.estilo();
 			Dados.setEstilo(s.nextInt());
 			definir.defineEstilo();
-			view.rotina();
-			Dados.setRotina(s.next());
-			view.tipoRotina();
-			Dados.setTipoRotina(s.nextInt());
-			definir.defineTipoRotina();
-			view.nivel();
-			Dados.setNivel(s.nextInt());
-			definir.defineNivel();
-			if (Dados.getEstilo() == 2) {
+			if (Dados.getEstilo() == 1) {
+				cadWushu.cadastrarWushu();
+			}else if (Dados.getEstilo() == 2) {
 				view.peso();
 				Dados.setPeso(s.nextFloat());
 			}
@@ -52,5 +47,6 @@ public class CadastrarControl {
 			view.repetir();
 			rep = s.nextInt();
 		} while (rep == 1);
+		s.close();
 	}
 }
