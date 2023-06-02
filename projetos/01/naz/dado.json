@@ -11,7 +11,7 @@
     "faixaEtaria":"Adulto",
     "nivel": "A",
     "academia":"Zanolli",
-    "rotinaList":{
+    "rotinaList":[{
         "maosLivres":{
             "tipoRotina":"MãosLivres",
             "tipoRotinaID":1,
@@ -27,5 +27,5 @@
             "tipoRotinaID":3,
             "rotinaName":"Un Lan Gwan"
         }
-    }
+    }]
 }
