@@ -1,12 +1,13 @@
 package com.barros.zanolli.main;
 
+import com.barros.zanolli.control.CadastrarPessoaControl;
+import com.barros.zanolli.control.CadastrarRotinaControl;
+
 public class Main {
 	public static void main(String args[]) {
-		/*CadastrarControl cad = new CadastrarControl();
-		CriarJSON bd = new CriarJSON();
-		cad.cadastrar();
-		bd.criarJSON();*/
-		
-		
+		CadastrarPessoaControl cad = new CadastrarPessoaControl();
+		cad.cadastrarPessoa();
+		CadastrarRotinaControl rot = new CadastrarRotinaControl();
+		rot.cadastrarRotina();
 	}
 }

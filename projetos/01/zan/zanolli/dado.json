@@ -1,5 +1,4 @@
-{
-	"dados": [
+[
 		{
 			"nome": "Fulano",
 			"estilo": "Wushu",
@@ -36,4 +35,3 @@
 			]
 		}
 	]
-}
