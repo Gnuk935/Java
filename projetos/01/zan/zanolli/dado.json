@@ -1,0 +1,33 @@
+{
+    "nome":"Fulano",
+    "estilo":"Wushu",
+    "estiloID": 1,
+    "naipe":"Masculino",
+    "naipeID": 1,
+    "diaNascimento": 1,
+    "mesNascimento": 1,
+    "anoNascimento": 2000,
+    "idade": 23,
+    "faixaEtaria":"Adulto",
+    "nivel": "A",
+    "nivelID": 1,
+    "academia":"Zanolli",
+    "academiaID":1,
+    "rotinaList":[{
+        "maosLivres":{
+            "tipoRotina":"MãosLivres",
+            "tipoRotinaID":1,
+            "rotinaName":"Panpou"
+        },
+        "armasMedias":{
+            "tipoRotina":"Armas Medias",
+            "tipoRotinaID":2,
+            "rotinaName":"Bagwa"
+        },
+        "armasLongas":{
+            "tipoRotina":"Armas Longas",
+            "tipoRotinaID":3,
+            "rotinaName":"Un Lan Gwan"
+        }
+    }]
+}
