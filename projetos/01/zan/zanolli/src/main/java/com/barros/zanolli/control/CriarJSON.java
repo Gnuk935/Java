@@ -4,12 +4,13 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.json.simple.JSONObject;
+import org.json.JSONObject;
 
 import com.barros.zanolli.model.Dados;
 
 public class CriarJSON {
 	public void criarJSON() {
+		//JSONArray pikaLista = new JSONArray();
 		JSONObject pikachu = new JSONObject();
 		FileWriter escreve = null;
 
@@ -27,6 +28,8 @@ public class CriarJSON {
 		pikachu.put("nivelID", Dados.getNivel());
 		pikachu.put("academia", Dados.getAcademiaString());
 		pikachu.put("academiaID", Dados.getAcademia());
+		
+		
 
 		try {
 			escreve = new FileWriter("dado.json", true);
