@@ -1,4 +1,4 @@
-package com.barros.model;
+package com.barros.zanolli.model;
 
 import java.util.Calendar;
 import java.util.Date;
