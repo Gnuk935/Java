@@ -7,7 +7,6 @@ import com.barros.zanolli.model.Dados;
 import com.barros.zanolli.model.EscreveArquivos;
 
 public class CriarJSON {
-	private static JSONArray lista;
 	public void criarJSON() {
 		JSONObject pikachu = new JSONObject();
 		JSONArray pikaLista = new JSONArray();
@@ -27,18 +26,11 @@ public class CriarJSON {
 		pikachu.put("nivelID", Dados.getNivel());
 		pikachu.put("academia", Dados.getAcademiaString());
 		pikachu.put("academiaID", Dados.getAcademia());
-		
+
 		pikaArray.put("maosLivres");
 		pikaArray.put("armasMedias");
 		pikaArray.put("ArmasLongas");
 		pikachu.put("rotinaList", pikaArray);
-		setLista(pikaLista.put(pikachu));
-		escrever.escreverArquivo();
-	}
-	public static JSONArray getLista() {
-		return lista;
-	}
-	public static void setLista(JSONArray lista) {
-		CriarJSON.lista = lista;
+		escrever.escreverArquivo(pikaLista.put(pikachu).toString());
 	}
 }
