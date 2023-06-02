@@ -13,7 +13,7 @@
     "nivelID": 1,
     "academia":"Zanolli",
     "academiaID":1,
-    "rotinaList":{
+    "rotinaList":[{
         "maosLivres":{
             "tipoRotina":"MãosLivres",
             "tipoRotinaID":1,
@@ -29,5 +29,5 @@
             "tipoRotinaID":3,
             "rotinaName":"Un Lan Gwan"
         }
-    }
+    }]
 }
