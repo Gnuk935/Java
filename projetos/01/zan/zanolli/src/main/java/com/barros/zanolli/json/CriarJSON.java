@@ -1,18 +1,17 @@
-package com.barros.zanolli.control;
+package com.barros.zanolli.json;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-
-import org.json.simple.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import com.barros.zanolli.model.Dados;
+import com.barros.zanolli.model.EscreveArquivos;
 
 public class CriarJSON {
 	public void criarJSON() {
 		JSONObject pikachu = new JSONObject();
-		FileWriter escreve = null;
-
+		JSONArray pikaLista = new JSONArray();
+		JSONArray pikaArray = new JSONArray();
+		EscreveArquivos escrever = new EscreveArquivos();
 		pikachu.put("nome", Dados.getAtleta());
 		pikachu.put("estilo", Dados.getEstiloString());
 		pikachu.put("estiloID", Dados.getEstilo());
@@ -28,17 +27,10 @@ public class CriarJSON {
 		pikachu.put("academia", Dados.getAcademiaString());
 		pikachu.put("academiaID", Dados.getAcademia());
 
-		try {
-			escreve = new FileWriter("dado.json", true);
-			BufferedWriter con = new BufferedWriter(escreve);
-
-			con.write(pikachu.toString());
-			con.newLine();
-			con.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		System.out.println(pikachu);
-
+		pikaArray.put("maosLivres");
+		pikaArray.put("armasMedias");
+		pikaArray.put("ArmasLongas");
+		pikachu.put("rotinaList", pikaArray);
+		escrever.escreverArquivo(pikaLista.put(pikachu).toString());
 	}
 }
