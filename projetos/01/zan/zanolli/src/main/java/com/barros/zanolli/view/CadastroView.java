@@ -1,4 +1,4 @@
-package com.barros.view;
+package com.barros.zanolli.view;
 
 public class CadastroView {
 	public void introducao() {

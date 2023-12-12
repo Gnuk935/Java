@@ -1,4 +1,4 @@
-package com.barros.model;
+package com.barros.zanolli.model;
 
 public class FaixaEtaria {
 	private static int idaNum;

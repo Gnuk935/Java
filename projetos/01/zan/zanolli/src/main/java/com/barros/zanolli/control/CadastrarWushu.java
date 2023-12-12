@@ -1,10 +1,10 @@
-package com.barro.control;
+package com.barros.zanolli.control;
 
 import java.util.Scanner;
 
-import com.barros.model.Dados;
-import com.barros.model.DefinirValores;
-import com.barros.view.CadastroView;
+import com.barros.zanolli.model.Dados;
+import com.barros.zanolli.model.DefinirValores;
+import com.barros.zanolli.view.CadastroView;
 
 public class CadastrarWushu {
 	private Scanner s;
